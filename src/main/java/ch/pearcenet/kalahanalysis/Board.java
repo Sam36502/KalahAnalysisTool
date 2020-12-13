@@ -34,6 +34,12 @@ public class Board {
         board[13] = 0;
     }
 
+    public Board clone() {
+        Board b = new Board(STARTING_SEEDS);
+        b.board = this.board.clone();
+        return b;
+    }
+
     /**
      * Moves the seeds in standard Kalah moves
      * until the round ends in the score pit or
@@ -79,6 +85,10 @@ public class Board {
 
     public int get(int i) {
         return board[i];
+    }
+
+    public int getSTARTING_SEEDS() {
+        return STARTING_SEEDS;
     }
 
 }

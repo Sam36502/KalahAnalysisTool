@@ -11,4 +11,17 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Kalah Analysis Tool',
+                'Implementation-Version': version,
+                'Main-Class': 'ch.pearcenet.kalahanalysis.Main'
+    }
+    baseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
 }
