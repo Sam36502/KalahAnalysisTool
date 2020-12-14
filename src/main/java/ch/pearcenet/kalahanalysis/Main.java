@@ -20,7 +20,7 @@ public class Main {
                         "About",
                         "This is the Kalah Analysis Tool, version 1.0.\n" +
                                 "\n" +
-                                "Version: 1.0.0 - SNAPSHOT\n" +
+                                "Version: 1.0.0\n" +
                                 "Made by: Samuel Pearce\n" +
                                 "'''Date: 14/12/2020\n"
                 ),
