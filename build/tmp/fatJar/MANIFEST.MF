@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: Kalah Analysis Tool
+Implementation-Version: 1.0
+Main-Class: ch.pearcenet.kalahanalysis.Main
+
