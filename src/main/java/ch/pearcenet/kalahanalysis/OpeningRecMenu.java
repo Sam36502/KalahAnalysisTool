@@ -6,16 +6,11 @@ import ch.pearcenet.easymenus.util.AnsiUtils;
 
 public class OpeningRecMenu extends MenuPage {
 
-    private Board board;
-
-    private static int RecLevel = 0;
-
     public OpeningRecMenu(Board board) {
         super(
                 "Analysis " + board.getSTARTING_SEEDS(),
                 "Score: " + board.get(6) + " *"
         );
-        this.board = board;
 
         // Perform Analysis
         for (int i=0; i<6; i++) {

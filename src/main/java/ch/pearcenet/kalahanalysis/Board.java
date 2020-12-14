@@ -54,6 +54,11 @@ public class Board {
             i += 7;
         }
 
+        if (board[i] < 1) {
+            System.out.println("ERROR: Tried to move from pit with no seeds.");
+            return false;
+        }
+
         int inHand = board[i];
         board[i] = 0;
         boolean roundOver = false;
