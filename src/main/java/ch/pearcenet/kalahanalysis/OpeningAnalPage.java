@@ -9,7 +9,7 @@ public class OpeningAnalPage extends InputPage {
 
     public OpeningAnalPage() {
         super("Opening Analyser");
-        seedCountInput = new StringInput("Number of Seeds in each pit at the start:", 100, "[0-9]+", "(1 - 99)");
+        seedCountInput = new StringInput("Number of Seeds in each pit at the start:", 2, "[0-9]+", "(1 - 99)");
         super.getInputs().add(seedCountInput);
     }
 

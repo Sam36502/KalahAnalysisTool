@@ -12,8 +12,17 @@ public class Main {
         AnsiUtils.installConsole();
 
         MenuPage mainMenu = new MenuPage(
-                "Kalah Game Analysis Tool V1.0",
+                "KAT V1.0",
                 new OpeningAnalPage(),
+                new TextPage(
+                        "KAT Tool Info",
+                        "About",
+                        "This is the Kalah Analysis Tool, version 1.0.\n" +
+                                "\n" +
+                                "- Version: 1.0.0 - SNAPSHOT\n" +
+                                "- Made by: Samuel Pearce\n" +
+                                "-    Date: 14/12/2020\n"
+                ),
                 new TextPage(
                         "Kalah Rules:",
                         "Kalah Rules",
